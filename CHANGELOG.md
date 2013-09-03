@@ -1,3 +1,9 @@
+## v1.4.2:
+
+### Improvement
+
+- Added support of specifying socket in connection hash for mysql
+
 ## v1.4.0:
 
 ### Bug

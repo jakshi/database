@@ -84,7 +84,7 @@ class Chef
               @new_resource.connection[:host],
               @new_resource.connection[:username],
               @new_resource.connection[:password],
-              nil,
+              @new_resource.connection[:socket] || nil,
               @new_resource.connection[:port] || 3306
             )
             connection.set_server_option ::Mysql::OPTION_MULTI_STATEMENTS_ON
